@@ -1,0 +1,8 @@
+// default_style by Luca Jones - luca.jones@me.com
+ #box {background: url(bg.jpg); background-color: #b0c4de; display: none; height: 100%; position: absolute; text-align: center; top: 0px; width: 100%; margin:0px; padding:0px; text-align:center;}
+ #boxinside {width:800px; margin:100px auto; text-align: center; padding:0px}
+ td {width: 270px; font:50px arial,sans-serif;}
+ table {background-color:rgba(0,0,205,0.5); color: white; height: 400px;}
+ #oneicondisplay img {width: 250px; height: 250px;}
+ #twoicondisplay img {width: 250px; height: 250px;}
+ #threeicondisplay img {width: 250px; height: 250px;}

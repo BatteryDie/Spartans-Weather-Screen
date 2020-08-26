@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Spartan's Weather Screen</title>
+<script type="text/javascript">
+function createweather()
+{
+var onetemperatureelement = document.getElementById("onetemperature");
+var onetemperaturenumber = onetemperatureelement.value;
+document.getElementById("onetemperaturedisplay").innerHTML="<center>Today<br>"+onetemperaturenumber+"&#176C<\/center>";
+
+var twotemperatureelement = document.getElementById("twotemperature");
+var twotemperaturenumber = twotemperatureelement.value;
+document.getElementById("twotemperaturedisplay").innerHTML="<center>Tomorrow<br>"+twotemperaturenumber+"&#176C<\/center>";
+
+var threetemperatureelement = document.getElementById("threetemperature");
+var threetemperaturenumber = threetemperatureelement.value;
+var nexttwodayselement = document.getElementById("nexttwodays");
+var nexttwodaysday = nexttwodayselement.value;
+document.getElementById("threetemperaturedisplay").innerHTML="<center>"+nexttwodaysday+"<br>"+threetemperaturenumber+"&#176C<\/center>";
+
+var oneiconelement = document.getElementById("oneicon");
+var oneiconfile = oneiconelement.value;
+document.getElementById("oneicondisplay").innerHTML="<center><img src='resources/icon-set/"+oneiconfile+".png'><\/center>";
+
+var twoiconelement = document.getElementById("twoicon");
+var twoiconfile = twoiconelement.value;
+document.getElementById("twoicondisplay").innerHTML="<center><img src='resources/icon-set/"+twoiconfile+".png'><\/center>";
+
+var threeiconelement = document.getElementById("threeicon");
+var threeiconfile = threeiconelement.value;
+document.getElementById("threeicondisplay").innerHTML="<center><img src='resources/icon-set/"+threeiconfile+".png'><\/center>";
+
+document.getElementById("box").style.display="inline";
+}
+</script>
+<style type="text/css" id="test">
+ body {margin:0px 0px;}
+ #content {margin:30px 30px;}
+ #box {background: url(resources/styles/bg.jpg); background-color: #b0c4de; display: none; height: 100%; position: absolute; text-align: center; top: 0px; width: 100%; margin:0px; padding:0px; text-align:center;}
+ #boxinside {width:800px; margin:50px auto; text-align: center; padding:0px}
+ td {width: 270px; font:50px arial,sans-serif;}
+ table {background-color:rgba(0,0,205,0.5); color: white; height: 400px;}
+ #oneicondisplay img {width: 250px; height: 250px;}
+ #twoicondisplay img {width: 250px; height: 250px;}
+ #threeicondisplay img {width: 250px; height: 250px;}
+</style>
+</head>
+<body>
+<div id="box">
+<div id="boxinside">
+<table class="tableforlazy">
+<tr>
+<td>
+<div id="oneicondisplay"></div>
+<div id="onetemperaturedisplay"></div>
+</td>
+<td>
+<div id="twoicondisplay"></div>
+<div id="twotemperaturedisplay"></div>
+</td>
+<td>
+<div id="threeicondisplay"></div>
+<div id="threetemperaturedisplay"></div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="content">
+<h1>Spartan TV Weather Screen</h1>
+<p>Today: <select id="oneicon">
+<option value="clear_night">clear_night</option>
+<option value="cloudy">cloudy</option>
+<option value="cloudy_night">cloudy_night</option>
+<option value="cold">cold</option>
+<option value="fog_night">fog_night</option>
+<option value="foggy">foggy</option>
+<option value="heat">heat</option>
+<option value="heavy_cloudy_night">heavy_cloudy_night</option>
+<option value="heavy_rain">heavy_rain</option>
+<option value="heavysnow">heavysnow</option>
+<option value="ice">ice</option>
+<option value="ice_snow">ice_snow</option>
+<option value="night_rain">night_rain</option>
+<option value="night_rain_thunder">night_rain_thunder</option>
+<option value="overcast">overcast</option>
+<option value="partly_cloudy">partly_cloudy</option>
+<option value="rain">rain</option>
+<option value="rain_snow">rain_snow</option>
+<option value="rain_sun">rain_sun</option>
+<option value="rain_thunder">rain_thunder</option>
+<option value="rain_thunder_sun">rain_thunder_sun</option>
+<option value="rain_tornado">rain_tornado</option>
+<option value="snow">snow</option>
+<option value="snow_night">snow_night</option>
+<option value="snow_sun">snow_sun</option>
+<option value="snow_thunder_sun">snow_thunder_sun</option>
+<option value="sunny">sunny</option>
+<option value="tornado">tornado</option>
+</select> - Temperature: <input type="text" maxlength="2" id="onetemperature" value="0">&#176C<br>
+Tomorrow: <select id="twoicon">
+<option value="clear_night">clear_night</option>
+<option value="cloudy">cloudy</option>
+<option value="cloudy_night">cloudy_night</option>
+<option value="cold">cold</option>
+<option value="fog_night">fog_night</option>
+<option value="foggy">foggy</option>
+<option value="heat">heat</option>
+<option value="heavy_cloudy_night">heavy_cloudy_night</option>
+<option value="heavy_rain">heavy_rain</option>
+<option value="heavysnow">heavysnow</option>
+<option value="ice">ice</option>
+<option value="ice_snow">ice_snow</option>
+<option value="night_rain">night_rain</option>
+<option value="night_rain_thunder">night_rain_thunder</option>
+<option value="overcast">overcast</option>
+<option value="partly_cloudy">partly_cloudy</option>
+<option value="rain">rain</option>
+<option value="rain_snow">rain_snow</option>
+<option value="rain_sun">rain_sun</option>
+<option value="rain_thunder">rain_thunder</option>
+<option value="rain_thunder_sun">rain_thunder_sun</option>
+<option value="rain_tornado">rain_tornado</option>
+<option value="snow">snow</option>
+<option value="snow_night">snow_night</option>
+<option value="snow_sun">snow_sun</option>
+<option value="snow_thunder_sun">snow_thunder_sun</option>
+<option value="sunny">sunny</option>
+<option value="tornado">tornado</option>
+</select> - Temperature: <input type="text" maxlength="2" id="twotemperature" value="0">&#176C<br>
+Next two days: <select id="nexttwodays">
+<option value="Sunday">Sunday</option>
+<option value="Monday">Monday</option>
+<option value="Tuesday">Tuesday</option>
+<option value="Wednesday">Wednesday</option>
+<option value="Thursday">Thursday</option>
+<option value="Friday">Friday</option>
+<option value="Saturday">Saturday</option>
+</select> <select id="threeicon">
+<option value="clear_night">clear_night</option>
+<option value="cloudy">cloudy</option>
+<option value="cloudy_night">cloudy_night</option>
+<option value="cold">cold</option>
+<option value="fog_night">fog_night</option>
+<option value="foggy">foggy</option>
+<option value="heat">heat</option>
+<option value="heavy_cloudy_night">heavy_cloudy_night</option>
+<option value="heavy_rain">heavy_rain</option>
+<option value="heavysnow">heavysnow</option>
+<option value="ice">ice</option>
+<option value="ice_snow">ice_snow</option>
+<option value="night_rain">night_rain</option>
+<option value="night_rain_thunder">night_rain_thunder</option>
+<option value="overcast">overcast</option>
+<option value="partly_cloudy">partly_cloudy</option>
+<option value="rain">rain</option>
+<option value="rain_snow">rain_snow</option>
+<option value="rain_sun">rain_sun</option>
+<option value="rain_thunder">rain_thunder</option>
+<option value="rain_thunder_sun">rain_thunder_sun</option>
+<option value="rain_tornado">rain_tornado</option>
+<option value="snow">snow</option>
+<option value="snow_night">snow_night</option>
+<option value="snow_sun">snow_sun</option>
+<option value="snow_thunder_sun">snow_thunder_sun</option>
+<option value="sunny">sunny</option>
+<option value="tornado">tornado</option>
+</select> - Temperature: <input type="text" maxlength="2" id="threetemperature" value="0">&#176C
+<br>
+<button type="button" id="f1" onclick="createweather();">Make it!</button></p>
+<p><b>Screen Resolution Requirements:</b> 1024 x 768 or higher. Apple Safari and Google Chrome are recommended.<br>
+<b>Version:</b> 1.1<br><b>Built Date:</b> March 18, 2014<br><b>Codes by</b> <a href="mailto:luca.jones@me.com">Luca Jones</a><br>
+<b>Weather Icons by</b> <a href="http://d3stroy.deviantart.com/art/SILq-Weather-Icons-356609017">d3stroy</a>
+<br>
+<b>Changelog:</b><br>
+1.2 -  April 2, 2014 - temperature input have now max length locked.<br>
+1.1 -  March 18, 2014 - CSS codes are big changed! Theme feature is coming soon.<br>
+1.0 -  March 14, 2014 - It was born. All functions are using simple javascript write document and change Element.
+</p>
+</div>
+
+</body>
