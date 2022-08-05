@@ -1,17 +1,33 @@
-function startup() {
-    let today = new Date();
-    document.getElementById('today').innerHTML=today;
-    let list = "<option value='clear_night'>clear_night</option><option value='cloudy'>cloudy</option><option value='cloudy_night'>cloudy_night</option><option value='cold'>cold</option><option value='fog_night'>fog_night</option><option value='foggy'>foggy</option><option value='heat'>heat</option><option value='heavy_cloudy_night'>heavy_cloudy_night</option><option value='heavy_rain'>heavy_rain</option><option value='heavysnow'>heavysnow</option><option value='ice'>ice</option><option value='ice_snow'>ice_snow</option><option value='night_rain'>night_rain</option><option value='night_rain_thunder'>night_rain_thunder</option><option value='overcast'>overcast</option><option value='partly_cloudy'>partly_cloudy</option><option value='rain'>rain</option><option value='rain_snow'>rain_snow</option><option value='rain_sun'>rain_sun</option><option value='rain_thunder'>rain_thunder</option><option value='rain_thunder_sun'>rain_thunder_sun</option><option value='rain_tornado'>rain_tornado</option><option value='snow'>snow</option><option value='snow_night'>snow_night</option><option value='snow_sun'>snow_sun</option><option value='snow_thunder_sun'>snow_thunder_sun</option><option value='sunny'>sunny</option><option value='tornado'>tornado</option>"
-    document.getElementById("i0con").innerHTML=list;
-    document.getElementById("i1con").innerHTML=list;
-    document.getElementById("i2con").innerHTML=list;
-    document.getElementById("i3con").innerHTML=list;
-    document.getElementById("i4con").innerHTML=list;
-    document.getElementById("i5con").innerHTML=list;
-    document.getElementById("i6con").innerHTML=list;
-}
 function createweather() {
     var elem = document.documentElement;
+    var o0templo = document.getElementById("i0templo").value;
+    var o0temphi = document.getElementById("i0temphi").value;
+    document.getElementById("0templo").innerHTML=o0templo+"&#176C";
+    document.getElementById("0temphi").innerHTML=o0temphi+"&#176C";
+    var o1templo = document.getElementById("i1templo").value;
+    var o1temphi = document.getElementById("i1temphi").value;
+    document.getElementById("1templo").innerHTML=o1templo+"&#176C";
+    document.getElementById("1temphi").innerHTML=o1temphi+"&#176C";
+    var o2templo = document.getElementById("i2templo").value;
+    var o2temphi = document.getElementById("i2temphi").value;
+    document.getElementById("2templo").innerHTML=o2templo+"&#176C";
+    document.getElementById("2temphi").innerHTML=o2temphi+"&#176C";
+    var o3templo = document.getElementById("i3templo").value;
+    var o3temphi = document.getElementById("i3temphi").value;
+    document.getElementById("3templo").innerHTML=o3templo+"&#176C";
+    document.getElementById("3temphi").innerHTML=o3temphi+"&#176C";
+    var o4templo = document.getElementById("i4templo").value;
+    var o4temphi = document.getElementById("i4temphi").value;
+    document.getElementById("4templo").innerHTML=o4templo+"&#176C";
+    document.getElementById("4temphi").innerHTML=o4temphi+"&#176C";
+    var o5templo = document.getElementById("i5templo").value;
+    var o5temphi = document.getElementById("i5temphi").value;
+    document.getElementById("5templo").innerHTML=o5templo+"&#176C";
+    document.getElementById("5temphi").innerHTML=o5temphi+"&#176C";
+    var o6templo = document.getElementById("i6templo").value;
+    var o6temphi = document.getElementById("i6temphi").value;
+    document.getElementById("6templo").innerHTML=o6templo+"&#176C";
+    document.getElementById("6temphi").innerHTML=o6temphi+"&#176C";
     document.getElementById('screen').style.display='block';
     document.getElementById('controlpanel').style.display='none';
     if (elem.requestFullscreen) {
