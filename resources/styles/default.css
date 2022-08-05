@@ -1,8 +1,85 @@
-// default_style by Luca Jones - luca.jones@me.com
- #box {background: url(bg.jpg); background-color: #b0c4de; display: none; height: 100%; position: absolute; text-align: center; top: 0px; width: 100%; margin:0px; padding:0px; text-align:center;}
- #boxinside {width:800px; margin:100px auto; text-align: center; padding:0px}
- td {width: 270px; font:50px arial,sans-serif;}
- table {background-color:rgba(0,0,205,0.5); color: white; height: 400px;}
- #oneicondisplay img {width: 250px; height: 250px;}
- #twoicondisplay img {width: 250px; height: 250px;}
- #threeicondisplay img {width: 250px; height: 250px;}
+        .screen {
+        position: absolute;
+        display: none;
+        width: 1920px;
+        height: 1080px;
+        background-image: linear-gradient(#8585e0, #5c5cd6, #3333cc);
+        }
+        .table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 270px;
+        }
+        .title {
+        position: absolute;
+        background-image: linear-gradient(#0672d6, #01427f);
+        width: 1260px;
+        border-radius: 0 25px 25px 0px;
+        margin-top: 90px;
+        padding: 20px 0px 20px 200px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 80px;
+        color: #ffffff;
+        text-shadow: 2px 2px 10px #000000;
+        }
+        .column {
+        float: left;
+        background-image: linear-gradient(to bottom right, #0672d6, #01427f);
+        width: 200px;
+        padding: 0px;
+        margin: 10px;
+        height: 670px;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        .header {
+        background-color: white;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+        }
+        .icon {
+        width: 100%;
+        padding-bottom: 20px;
+        text-align: center;
+        }
+        .icon img {
+        width: 100%;
+        }
+        .name {
+        width: 100%;
+        padding-top: 20px;
+        font-family: Verdana, sans-serif;
+        font-weight: lighter;
+        font-size: 40px;
+        word-break:break-all;
+        color: white;
+        text-align: center;
+        }
+        .temphi {
+        width: 100%;
+        padding-bottom: 20px;
+        font-family: Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+        color: white;
+        text-align: center;
+        }
+        .templo {
+        width: 100%;
+        font-family: Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 60px;
+        background-color: whitesmoke;
+        color: linear-gradient(to bottom right, #0672d6, #01427f);
+        text-align: center;
+        }

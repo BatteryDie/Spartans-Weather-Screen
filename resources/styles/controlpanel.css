@@ -1,0 +1,16 @@
+            body {
+                margin:0px 0px;
+            }
+            .controlpanel {
+                padding: 30px;
+            }
+            .cpcolumn {
+                float: left;
+                width: 300px;
+                padding: 10px;
+            }
+            .controlpanel button {
+                font-size: 16px;
+                width: 170px;
+                padding: 5px;
+            }
