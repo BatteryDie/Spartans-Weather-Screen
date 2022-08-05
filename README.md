@@ -4,3 +4,7 @@ This is simply 7-days forecast display on the website. It was one of projects fo
 The website is designed for 1080p screen resolution.
 
 Preview: https://batterydie.github.io/WeatherMachine/
+
+## Credit
+- COde by Luca Jones
+- Weather Icon Designs by [d3stroy](http://d3stroy.deviantart.com/art/SILq-Weather-Icons-356609017)
