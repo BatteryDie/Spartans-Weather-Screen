@@ -1,4 +1,6 @@
-# WeatherMachine
-I created a weather forecast website for my high school project a very long time ago. It can display a 3-Day weather forecast screen with simple JavaScript and CSS.
+# WeatherMachine 2.0
+This is simply 7-days forecast display on the website. It was one of projects for my high school a very long time ago. On 2022, I improved it with better CSS and JavaScript code.
 
-I'm thinking of upgrading this project.
+The website is designed for 1080p screen resolution.
+
+Preview: https://batterydie.github.io/WeatherMachine/
