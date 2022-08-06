@@ -1,6 +1,7 @@
 function startup() {
     let today = new Date();
     document.getElementById('today').innerHTML=today;
+    //Load list
     let list = "<option value='clear_night'>clear_night</option>\
     <option value='cloudy'>cloudy</option>\
     <option value='cloudy_night'>cloudy_night</option>\
